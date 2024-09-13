@@ -12,7 +12,7 @@ let
 
   omnetppPkgs =  rec {
     callPackage = pkgs.newScope (omnetppScope // omnetppPkgs);
-    omnetpp = callPackage ./omnetpp { };
+    # omnetpp = callPackage ./omnetpp { };
     # osgearth = callPackage ./3rdparty/osgearth { gdal = pkgs.gdal_2; };
     sewar = callPackage ./3rdparty/sewar {};
   };

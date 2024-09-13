@@ -3,6 +3,7 @@
 pkgs.python3Packages.buildPythonPackage rec {
   pname = "sewar";
   version = "0.4.6";
+  pyproject = true;
 
   # Specify source of the package. It can be a Git repo, a local directory, or a tarball
   # src = https://github.com/andrewekhalel/sewar;
